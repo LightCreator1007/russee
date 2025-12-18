@@ -1,0 +1,11 @@
+[package]
+name = "russee"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ratatui = "0.26"
+crossterm = "0.27"
+anyhow = "1"
+regex = "1"
+walkdir = "2"
