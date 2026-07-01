@@ -1,0 +1,23 @@
+[package]
+name = "russee"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "rsc"
+path = "src/main.rs"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+nucleo = "0.5"
+ignore = "0.4"
+regex = "1"
+syntect = "5"
+two-face = "0.4"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+anyhow = "1"
+
+[dev-dependencies]
+tempfile = "3"

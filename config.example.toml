@@ -1,0 +1,20 @@
+# Russee configuration.
+# Copy to ~/.config/russee/config.toml and edit. All keys are optional;
+# a missing file (or a typo) just falls back to the built-in defaults.
+
+# Editor opened by Ctrl+O. Known names get the right line flag automatically:
+#   vi vim nvim nano emacs micro  ->  EDITOR +LINE FILE
+#   code code-insiders codium     ->  EDITOR -g FILE:LINE
+#   zed subl hx                   ->  EDITOR FILE:LINE
+# If unset, Russee uses $EDITOR, then falls back to vi.
+editor = "nvim"
+
+# For any editor not in the list above, give a command template.
+# {file} and {line} are substituted; this WINS over `editor` when both are set.
+# editor_cmd = "emacsclient -n +{line} {file}"
+
+# Preview syntax theme. One of the ~24 bundled themes (e.g. "Nord", "Dracula",
+# "gruvbox-dark", "Solarized (dark)", "OneHalfDark", "Monokai Extended"),
+# OR "ansi" / "base16" to follow your terminal's color scheme,
+# OR the stem of a custom file at ~/.config/russee/themes/<name>.tmTheme.
+theme = "Nord"
